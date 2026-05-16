@@ -7,6 +7,7 @@ console.log('hello');
 Simple words mein: Aap ek function call karte ho, aur woh function aapko ek naya function de deta hai - value nahi, balke poori ki poori function!*/
 
 // ye simple aike number return ka seen hey 
+
 function clientnumber(){
     return 923160578365
 }
@@ -135,3 +136,67 @@ englishGreeting("Ali"); // Hello Ali
 
 
 
+// hoisting
+/*JavaScript Hoisting ek aisa behavior hai jisme JavaScript engine code ko execute (run) karne se pehle saare Variable aur Function declarations ko unke scope ke sab se top (oopar) le jata hai.
+Aasan alfaaz mein, iska matlab yeh hai ki aap kisi variable ya function ko banane (declare karne) se pehle hi use kar sakte hain, aur JavaScript error nahi deta.
+Chalein isko misalon se aasan samajhte hain.
+
+1. Function Hoisting (Sab se behtareen kaam karti hai)
+Agar aap ek normal function banate hain, toh aap use declare karne se pehle bhi call kar sakte hain.
+
+
+// Function banane se pehle hi call kar diya
+sayHello(); 
+
+function sayHello() {
+  console.log("Salam! Kia haal hen?");
+}
+
+
+JavaScript Hoisting ek aisa behavior hai jisme JavaScript engine code ko execute (run) karne se pehle saare Variable aur Function declarations ko unke scope ke sab se top (oopar) le jata hai.
+
+Aasan alfaaz mein, iska matlab yeh hai ki aap kisi variable ya function ko banane (declare karne) se pehle hi use kar sakte hain, aur JavaScript error nahi deta.
+
+Chalein isko misalon se aasan samajhte hain.
+
+1. Function Hoisting (Sab se behtareen kaam karti hai)
+Agar aap ek normal function banate hain, toh aap use declare karne se pehle bhi call kar sakte hain.
+
+Example:
+JavaScript
+// Function banane se pehle hi call kar diya
+sayHello(); 
+
+function sayHello() {
+  console.log("Salam! Kia haal hen?");
+}
+Background mein kia hota hai?
+JavaScript engine back-end par aapke code ko dekhta hai aur function sayHello() ko utha kar file ke sab se oopar rakh deta hai, isliye yeh bina kisi error ke chal jata hai.
+
+2. var ke sath Hoisting (Undefined ka chakkar)
+Agar aap var ke zariye variable banate hain, toh variable oopar toh chala jata hai (hoist ho jata hai), lekin uski value oopar nahi jati. Sirf variable ka naam oopar jata hai aur uski default value undefined ho jati hai.
+
+
+console.log(username); // Output: undefined (Error nahi aayega!)
+var username = "Hussain";
+console.log(username); // Output: Hussain
+
+
+let aur const ke sath Hoisting (Temporal Dead Zone)
+Modern JavaScript (ES6) mein let aur const bhi hoist hote hain, lekin yeh var ki tarah free nahi hote. Jab tak inko code mein unki line par value na mil jaye, yeh ek khufia jail mein hote hain jise Temporal Dead Zone (TDZ) kehte hain.
+Agar aap inhein declare karne se pehle access karenge, toh direct ReferenceError aayega.
+
+
+console.log(age); // ReferenceError: Cannot access 'age' before initialization
+let age = 20;
+
+*/
+
+
+
+
+// event loop
+
+
+
+//
